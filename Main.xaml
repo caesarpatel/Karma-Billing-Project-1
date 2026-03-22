@@ -94,7 +94,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="809,1249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="964,1249" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,7 +129,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" ContentHash="nBBTxQ9PR0-PkhXAheetKA" CvElementArea="1149, 441, 440, 47" CvType="InputBox" DesignTimeRectangle="1149, 442, 399, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Email' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="71b68e78-282b-49d9-89d5-6fee69fd5e1f" InformativeScreenshot="f1720b98b4225b9c10a03f28c65e09f2.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/28mL-LZ9aUKwLAT9iUYRdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" CvTextArea="1147, 415, 60, 16" CvTextArgument="Email *" CvType="Text" DesignTimeRectangle="1149, 414, 57, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label-text' aaname='Email ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email *' /&gt;" Guid="ddfd5726-7482-465d-b857-aae021f14725" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -150,7 +150,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="6882c346-3bd9-490e-9f82-d3cb87aa075c" ContentHash="VkjJaO60o0Og8zT3aL4QTA" CvElementArea="1148, 533, 441, 47" CvType="InputBox" DesignTimeRectangle="1149, 534, 395, 45" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="afb7ef17-cd7e-43c5-9fb7-5c1371d4d218" InformativeScreenshot="906e0887dcd66e3fbfb6f11b323feb41.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/RGVlUc7_90qNdJUn5Ee76Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="6882c346-3bd9-490e-9f82-d3cb87aa075c" CvTextArea="1146, 507, 87, 16" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="1149, 506, 84, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password ' tag='LABEL' type='' class='label-text' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password *' /&gt;" Guid="fe76d79c-a433-4346-b362-c0992fb3c6d9" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -171,7 +171,7 @@
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" ContentHash="S0aMZyhp5EiA4yVMvpXzjg" CvElementArea="1320, 625, 104, 43" CvTextArea="1349, 639, 44, 15" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1322, 627, 100, 39" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="b8b54908-acb2-405d-8625-3c614ff6068a" InformativeScreenshot="5fbcd2dfb065a8180dcaafe62323f592.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/LKcDZeKv_0iEigFIW_hD9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" CvTextArea="1147, 598, 134, 16" CvTextArgument="I forgot my password?" CvType="Text" DesignTimeRectangle="1149, 596, 131, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I forgot my password?' tag='A' type='' class='text-secondary text-decoration-none text-format' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='I forgot my password?' /&gt;" Guid="294c50c1-d78a-41ed-9246-a524186130ee" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -191,7 +191,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-dashboard" CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" ContentHash="Gwq-xwsDjUWk0gNfABNjsg" CvTextArea="63, 362, 124, 21" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="60, 359, 126, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='P' /&gt;" Guid="05daf3df-389b-4ba7-9ff6-acfa92fb6175" InformativeScreenshot="5fef62afc335cce508dc58c75b87c7a6.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/kAhOf9Ng402B8kIHn418Cw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | DashBoard' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" CvElementArea="28, 356, 33, 29" CvType="Icon" DesignTimeRectangle="33, 359, 24, 24" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;aside&amp;gt;app-sidebar&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;i' tag='I' class='nav-icon fas fa-people-carry' /&gt;" Guid="eddcaabe-ab9d-4b20-bdae-1e7e80e8be8b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALZSURBVEhL7VbrT9JRGPafam3ND9RWbmUtzbIQp4WllBGmqHiDKEi3VjpHNjVTwES8cBniBQS5iJpZ/Udve077nfydc+BT9qU+PAPOed/3ec97percBQP9TVSJB2eNf5Swp99JgaUoecYm6Hz1Jem+HEyt7TTnD9O47yPV1N6S7gGJsM1io1T2iAoHPyi3/42GXKOSkgo11+poNbbN9IDZ+WVJBpAIbfZByhaOmVK+9J3c3reSkgp1d0yU2MpxQkRIlAEkQoTQN+2nveIJhdeSzJAoUw5wbjf3hZLbeTK3W6V7QCI8a0iEFqud4hsZ2smU6P20ny5eqWX5Ca0mKJU5lAC5Aae3rK5oX0d429hKm6kizwNyuLC4RjcbmiiWzPJzEa9Gx6mzy8HCeVr33eRMZULHiIfl7rSxTP6Y+oZeViYcG6dAKCKdowbEttIRTvjmJCVgaiZYkRB9t5Xel84300VqNJnVhPAEHnHhVJGiiV32HeEBRIMatKhkCycUXv9tI1v8St39TjXh9fq7ulcsrSSox+HS5aUS4FBwOUaOYQ8j0s6RXyUhXrjweZ0LfgqssDMUTDAUrfhCVOuwe4zJd3R2cyfxiWJSEgJo8tjGrzBirHnfTHJnGpsekOl+hxJom0r6ZQnrG5vJ3PGMFwAqtKt3RFJSAT23GI7z8E7NBulGg1HqRU6I6Y7hC6/sAy8YGZTLzUQRnbY+2s0dMzIM7nvNbbQeT7FWUxKimpDsdO6IHlvtFFrbYISqXlJB62GtMjEwmMOhiE6fE8IrCOxkD6jFbGEvw29ULipYJBCBaoR8eu+QHlps3B5WHVaejtDY8ojnTfMIOcBvVfOqgA3DHM6UmL2nzx08LZMf5vWECCFCicbtHXSzC6wa5AMDADNWJBChTalIPMWq1nD5Kh8Cp5cxD2n7k262fLV4Vxtq2AxF2YvGVVDJo4cHXa91fzek9XTW+E/4x/ETo3adEfDVqyIAAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -199,6 +199,9 @@
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
                   <uix:VerifyExecutionOptions.Target>
                     <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="5746233b-2f5e-44b2-b9ff-59a1a33d00bb" ContentHash="ixhzEDvaa06DExb8lzjFKQ" CvTextArea="281, 208, 175, 25" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="282, 201, 173, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='page-title' tag='DIV' aaname='Manage Patients' innertext='Manage Patients' visibleinnertext='Manage Patients' /&gt;" Guid="10a98d4a-85fe-4f57-bdcd-1f6b31a48c6b" InformativeScreenshot="284231929b36f9921579a5b6a225066e.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/jSOhw87nuESRMEIJi3yOdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                   </uix:VerifyExecutionOptions.Target>
@@ -212,7 +215,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" ContentHash="rLtwVXvOZE6usUAaB9qHbw" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" InformativeScreenshot="99a5f0cc96f355b3429692afe4528137.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="297, 264, 107, 42" CvType="Button" DesignTimeRectangle="298, 266, 104, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='primary-btn d-flex align-items-center' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Filters' visibleinnertext='FILTERS' check:innerText='FILTERS' /&gt;" Guid="8a3be0b2-a2a3-4d98-929d-f6a8c305fff6" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -229,7 +232,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished looking for test patients&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished looking for test patients - check git&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
