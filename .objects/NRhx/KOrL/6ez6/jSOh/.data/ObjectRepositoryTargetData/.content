@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ixhzEDvaa06DExb8lzjFKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="5746233b-2f5e-44b2-b9ff-59a1a33d00bb" CvTextArea="281, 208, 175, 25" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="282, 201, 173, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='page-title' tag='DIV' aaname='Manage Patients' innertext='Manage Patients' visibleinnertext='Manage Patients' /&gt;" Guid="10a98d4a-85fe-4f57-bdcd-1f6b31a48c6b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="284231929b36f9921579a5b6a225066e.jpg" xmlns="">0WwBCoJDCrkK0bxuT8eleUA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - Search for Test Patients",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "a2jXb9P3oUaFyKZuTAikyw",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-22T19:12:00.611082Z",
+  "Updated": "2026-03-22T19:12:00.611082Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

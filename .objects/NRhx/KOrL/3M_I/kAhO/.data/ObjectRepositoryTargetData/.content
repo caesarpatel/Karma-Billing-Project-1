@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Gwq-xwsDjUWk0gNfABNjsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-dashboard" CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" CvTextArea="63, 362, 124, 21" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="60, 359, 126, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='P' /&gt;" Guid="05daf3df-389b-4ba7-9ff6-acfa92fb6175" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | DashBoard' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" CvElementArea="28, 356, 33, 29" CvType="Icon" DesignTimeRectangle="33, 359, 24, 24" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;aside&amp;gt;app-sidebar&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;i' tag='I' class='nav-icon fas fa-people-carry' /&gt;" Guid="eddcaabe-ab9d-4b20-bdae-1e7e80e8be8b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALZSURBVEhL7VbrT9JRGPafam3ND9RWbmUtzbIQp4WllBGmqHiDKEi3VjpHNjVTwES8cBniBQS5iJpZ/Udve077nfydc+BT9qU+PAPOed/3ec97percBQP9TVSJB2eNf5Swp99JgaUoecYm6Hz1Jem+HEyt7TTnD9O47yPV1N6S7gGJsM1io1T2iAoHPyi3/42GXKOSkgo11+poNbbN9IDZ+WVJBpAIbfZByhaOmVK+9J3c3reSkgp1d0yU2MpxQkRIlAEkQoTQN+2nveIJhdeSzJAoUw5wbjf3hZLbeTK3W6V7QCI8a0iEFqud4hsZ2smU6P20ny5eqWX5Ca0mKJU5lAC5Aae3rK5oX0d429hKm6kizwNyuLC4RjcbmiiWzPJzEa9Gx6mzy8HCeVr33eRMZULHiIfl7rSxTP6Y+oZeViYcG6dAKCKdowbEttIRTvjmJCVgaiZYkRB9t5Xel84300VqNJnVhPAEHnHhVJGiiV32HeEBRIMatKhkCycUXv9tI1v8St39TjXh9fq7ulcsrSSox+HS5aUS4FBwOUaOYQ8j0s6RXyUhXrjweZ0LfgqssDMUTDAUrfhCVOuwe4zJd3R2cyfxiWJSEgJo8tjGrzBirHnfTHJnGpsekOl+hxJom0r6ZQnrG5vJ3PGMFwAqtKt3RFJSAT23GI7z8E7NBulGg1HqRU6I6Y7hC6/sAy8YGZTLzUQRnbY+2s0dMzIM7nvNbbQeT7FWUxKimpDsdO6IHlvtFFrbYISqXlJB62GtMjEwmMOhiE6fE8IrCOxkD6jFbGEvw29ULipYJBCBaoR8eu+QHlps3B5WHVaejtDY8ojnTfMIOcBvVfOqgA3DHM6UmL2nzx08LZMf5vWECCFCicbtHXSzC6wa5AMDADNWJBChTalIPMWq1nD5Kh8Cp5cxD2n7k262fLV4Vxtq2AxF2YvGVVDJo4cHXa91fzek9XTW+E/4x/ETo3adEfDVqyIAAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5fef62afc335cce508dc58c75b87c7a6.jpg" xmlns="">0u8kd1wFOWEiesVcSQpUksw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

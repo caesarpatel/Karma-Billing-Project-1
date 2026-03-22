@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-K1C0QN3WEK7ZFu2Qs4zFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="03f2f549-4426-445a-87d1-4245606fc574" CvElementArea="847, 481, 443, 46" CvType="InputBox" DesignTimeRectangle="847, 481, 443, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" Guid="85687f3e-a90b-4d7e-8da5-98761de488bc" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='EMR | Login - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="03f2f549-4426-445a-87d1-4245606fc574" CvTextArea="847, 455, 86, 16" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="847, 455, 86, 16" ElementType="Text" Guid="6ffc6281-2c7b-4b48-a0e2-c387ba863f7b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ded754f57c1a2078043402a25dd23a05.jpg" xmlns="">07BKU_J0PC0yUiIFIJM6m1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

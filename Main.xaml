@@ -1,0 +1,255 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="809,1249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,1226" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1032" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Log in sequence to isolate variables with username and password" DisplayName="Sequence - Log in to Karma EHR" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="strKarmaUsername" />
+                <Variable x:TypeArguments="ss:SecureString" Name="strKarmaPwd" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="KarmaEHR Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="caesar.patel@globecentrix.com's workspace" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[strKarmaPwd]" Username="[strKarmaUsername]" />
+              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Email *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="[strKarmaUsername]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" ContentHash="nBBTxQ9PR0-PkhXAheetKA" CvElementArea="1149, 441, 440, 47" CvType="InputBox" DesignTimeRectangle="1149, 442, 399, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Email' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="71b68e78-282b-49d9-89d5-6fee69fd5e1f" InformativeScreenshot="f1720b98b4225b9c10a03f28c65e09f2.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/28mL-LZ9aUKwLAT9iUYRdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" CvTextArea="1147, 415, 60, 16" CvTextArgument="Email *" CvType="Text" DesignTimeRectangle="1149, 414, 57, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label-text' aaname='Email ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email *' /&gt;" Guid="ddfd5726-7482-465d-b857-aae021f14725" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" SecureText="[strKarmaPwd]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="6882c346-3bd9-490e-9f82-d3cb87aa075c" ContentHash="VkjJaO60o0Og8zT3aL4QTA" CvElementArea="1148, 533, 441, 47" CvType="InputBox" DesignTimeRectangle="1149, 534, 395, 45" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="afb7ef17-cd7e-43c5-9fb7-5c1371d4d218" InformativeScreenshot="906e0887dcd66e3fbfb6f11b323feb41.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/RGVlUc7_90qNdJUn5Ee76Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="6882c346-3bd9-490e-9f82-d3cb87aa075c" CvTextArea="1146, 507, 87, 16" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="1149, 506, 84, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password ' tag='LABEL' type='' class='label-text' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password *' /&gt;" Guid="fe76d79c-a433-4346-b362-c0992fb3c6d9" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" ContentHash="S0aMZyhp5EiA4yVMvpXzjg" CvElementArea="1320, 625, 104, 43" CvTextArea="1349, 639, 44, 15" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1322, 627, 100, 39" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="b8b54908-acb2-405d-8625-3c614ff6068a" InformativeScreenshot="5fbcd2dfb065a8180dcaafe62323f592.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/LKcDZeKv_0iEigFIW_hD9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" CvTextArea="1147, 598, 134, 16" CvTextArgument="I forgot my password?" CvType="Text" DesignTimeRectangle="1149, 596, 131, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I forgot my password?' tag='A' type='' class='text-secondary text-decoration-none text-format' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='I forgot my password?' /&gt;" Guid="294c50c1-d78a-41ed-9246-a524186130ee" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Delay 1 second" sap:VirtualizedContainerService.HintSize="450,206" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay DisplayName=" Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Manage Patients'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-dashboard" CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" ContentHash="Gwq-xwsDjUWk0gNfABNjsg" CvTextArea="63, 362, 124, 21" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="60, 359, 126, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='P' /&gt;" Guid="05daf3df-389b-4ba7-9ff6-acfa92fb6175" InformativeScreenshot="5fef62afc335cce508dc58c75b87c7a6.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/kAhOf9Ng402B8kIHn418Cw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | DashBoard' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" CvElementArea="28, 356, 33, 29" CvType="Icon" DesignTimeRectangle="33, 359, 24, 24" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;aside&amp;gt;app-sidebar&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;i' tag='I' class='nav-icon fas fa-people-carry' /&gt;" Guid="eddcaabe-ab9d-4b20-bdae-1e7e80e8be8b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALZSURBVEhL7VbrT9JRGPafam3ND9RWbmUtzbIQp4WllBGmqHiDKEi3VjpHNjVTwES8cBniBQS5iJpZ/Udve077nfydc+BT9qU+PAPOed/3ec97percBQP9TVSJB2eNf5Swp99JgaUoecYm6Hz1Jem+HEyt7TTnD9O47yPV1N6S7gGJsM1io1T2iAoHPyi3/42GXKOSkgo11+poNbbN9IDZ+WVJBpAIbfZByhaOmVK+9J3c3reSkgp1d0yU2MpxQkRIlAEkQoTQN+2nveIJhdeSzJAoUw5wbjf3hZLbeTK3W6V7QCI8a0iEFqud4hsZ2smU6P20ny5eqWX5Ca0mKJU5lAC5Aae3rK5oX0d429hKm6kizwNyuLC4RjcbmiiWzPJzEa9Gx6mzy8HCeVr33eRMZULHiIfl7rSxTP6Y+oZeViYcG6dAKCKdowbEttIRTvjmJCVgaiZYkRB9t5Xel84300VqNJnVhPAEHnHhVJGiiV32HeEBRIMatKhkCycUXv9tI1v8St39TjXh9fq7ulcsrSSox+HS5aUS4FBwOUaOYQ8j0s6RXyUhXrjweZ0LfgqssDMUTDAUrfhCVOuwe4zJd3R2cyfxiWJSEgJo8tjGrzBirHnfTHJnGpsekOl+hxJom0r6ZQnrG5vJ3PGMFwAqtKt3RFJSAT23GI7z8E7NBulGg1HqRU6I6Y7hC6/sAy8YGZTLzUQRnbY+2s0dMzIM7nvNbbQeT7FWUxKimpDsdO6IHlvtFFrbYISqXlJB62GtMjEwmMOhiE6fE8IrCOxkD6jFbGEvw29ULipYJBCBaoR8eu+QHlps3B5WHVaejtDY8ojnTfMIOcBvVfOqgA3DHM6UmL2nzx08LZMf5vWECCFCicbtHXSzC6wa5AMDADNWJBChTalIPMWq1nD5Kh8Cp5cxD2n7k262fLV4Vxtq2AxF2YvGVVDJo4cHXa91fzek9XTW+E/4x/ETo3adEfDVqyIAAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="5746233b-2f5e-44b2-b9ff-59a1a33d00bb" ContentHash="ixhzEDvaa06DExb8lzjFKQ" CvTextArea="281, 208, 175, 25" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="282, 201, 173, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='page-title' tag='DIV' aaname='Manage Patients' innertext='Manage Patients' visibleinnertext='Manage Patients' /&gt;" Guid="10a98d4a-85fe-4f57-bdcd-1f6b31a48c6b" InformativeScreenshot="284231929b36f9921579a5b6a225066e.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/jSOhw87nuESRMEIJi3yOdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into - Search for Test Patients" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="test" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" ContentHash="rLtwVXvOZE6usUAaB9qHbw" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" InformativeScreenshot="99a5f0cc96f355b3429692afe4528137.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="297, 264, 107, 42" CvType="Button" DesignTimeRectangle="298, 266, 104, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='primary-btn d-flex align-items-center' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Filters' visibleinnertext='FILTERS' check:innerText='FILTERS' /&gt;" Guid="8a3be0b2-a2a3-4d98-929d-f6a8c305fff6" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished looking for test patients&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1632, 11, 1814, 1376" BrowserType="Chrome" ContentHash="F9r0ZbSG9kuLpS6C9GcZXg" IconBase64="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" InformativeScreenshot="223474fffd9396169f29a826edace3bb.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w" Selector="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" Url="https://karmaehr.com/login" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

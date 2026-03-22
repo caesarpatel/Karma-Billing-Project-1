@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nBBTxQ9PR0-PkhXAheetKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/login" CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" CvElementArea="1149, 441, 440, 47" CvType="InputBox" DesignTimeRectangle="1149, 442, 399, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Email' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="71b68e78-282b-49d9-89d5-6fee69fd5e1f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" CvTextArea="1147, 415, 60, 16" CvTextArgument="Email *" CvType="Text" DesignTimeRectangle="1149, 414, 57, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label-text' aaname='Email ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email *' /&gt;" Guid="ddfd5726-7482-465d-b857-aae021f14725" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1720b98b4225b9c10a03f28c65e09f2.jpg" xmlns="">0HC0Z_a91UUmOi9zpm0_lWg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

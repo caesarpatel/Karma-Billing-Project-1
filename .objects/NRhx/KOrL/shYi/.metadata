@@ -1,0 +1,13 @@
+﻿{
+  "Name": "EMR  Login - Google Chrome",
+  "Type": "Screen",
+  "Id": "shYi7KfYwkqz9HgLQJOgMQ",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/shYi7KfYwkqz9HgLQJOgMQ",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/KOrLAqK0pk6yZ21hiEe7gQ",
+  "Created": "2026-03-22T05:12:40.0369803Z",
+  "Updated": "2026-03-22T05:12:40.0369803Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="S0aMZyhp5EiA4yVMvpXzjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/login" CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" CvElementArea="1320, 625, 104, 43" CvTextArea="1349, 639, 44, 15" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1322, 627, 100, 39" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="b8b54908-acb2-405d-8625-3c614ff6068a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" CvTextArea="1147, 598, 134, 16" CvTextArgument="I forgot my password?" CvType="Text" DesignTimeRectangle="1149, 596, 131, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I forgot my password?' tag='A' type='' class='text-secondary text-decoration-none text-format' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='I forgot my password?' /&gt;" Guid="294c50c1-d78a-41ed-9246-a524186130ee" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5fbcd2dfb065a8180dcaafe62323f592.jpg" xmlns="">0Bwh_pdw3aUW5Zp8bbAcfJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

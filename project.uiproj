@@ -1,0 +1,6 @@
+{
+  "Name": "Karma Billing Project 1",
+  "ProjectType": "Process",
+  "Description": "Karma Billing Project to demonstrated opening Karma EHR and extract values from it.",
+  "MainFile": "Main.xaml"
+}
