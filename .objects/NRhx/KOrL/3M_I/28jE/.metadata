@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Patient Details",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "28jEHxYu8kq0Ng1ggriOZg",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/28jEHxYu8kq0Ng1ggriOZg",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-23T19:24:54.3937681Z",
+  "Updated": "2026-03-23T19:24:54.3937681Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -39,6 +39,8 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -92,27 +94,32 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="964,1249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="682,5243" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,1226" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,5220" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1032" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,5026" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="intRowIndex" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap2010:Annotation.AnnotationText="Log in sequence to isolate variables with username and password" DisplayName="Sequence - Log in to Karma EHR" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap2010:Annotation.AnnotationText="Log in sequence to isolate variables with username and password" DisplayName="Sequence - Log in to Karma EHR" sap:VirtualizedContainerService.HintSize="486,88" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strKarmaUsername" />
                 <Variable x:TypeArguments="ss:SecureString" Name="strKarmaPwd" />
@@ -125,7 +132,22 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="KarmaEHR Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="caesar.patel@globecentrix.com's workspace" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[strKarmaPwd]" Username="[strKarmaUsername]" />
-              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Email *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="[strKarmaUsername]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Email *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="[strKarmaUsername]" Version="V5">
+                <uix:NTypeInto.DelayAfter>
+                  <InArgument x:TypeArguments="x:Double" />
+                </uix:NTypeInto.DelayAfter>
+                <uix:NTypeInto.DelayBefore>
+                  <InArgument x:TypeArguments="x:Double" />
+                </uix:NTypeInto.DelayBefore>
+                <uix:NTypeInto.DelayBetweenKeys>
+                  <InArgument x:TypeArguments="x:Double" />
+                </uix:NTypeInto.DelayBetweenKeys>
+                <uix:NTypeInto.InUiElement>
+                  <InArgument x:TypeArguments="ui:UiElement" />
+                </uix:NTypeInto.InUiElement>
+                <uix:NTypeInto.OutUiElement>
+                  <OutArgument x:TypeArguments="ui:UiElement" />
+                </uix:NTypeInto.OutUiElement>
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="957b93b1-68f4-4600-b071-b8191db75cdc" ContentHash="nBBTxQ9PR0-PkhXAheetKA" CvElementArea="1149, 441, 440, 47" CvType="InputBox" DesignTimeRectangle="1149, 442, 399, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Email' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="71b68e78-282b-49d9-89d5-6fee69fd5e1f" InformativeScreenshot="f1720b98b4225b9c10a03f28c65e09f2.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/28mL-LZ9aUKwLAT9iUYRdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -135,6 +157,9 @@
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
+                <uix:NTypeInto.Timeout>
+                  <InArgument x:TypeArguments="x:Double" />
+                </uix:NTypeInto.Timeout>
                 <uix:NTypeInto.VerifyOptions>
                   <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                     <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -146,7 +171,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" SecureText="[strKarmaPwd]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" SecureText="[strKarmaPwd]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="6882c346-3bd9-490e-9f82-d3cb87aa075c" ContentHash="VkjJaO60o0Og8zT3aL4QTA" CvElementArea="1148, 533, 441, 47" CvType="InputBox" DesignTimeRectangle="1149, 534, 395, 45" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-dirty ng-touched ng-invalid' placeholder='Enter Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="afb7ef17-cd7e-43c5-9fb7-5c1371d4d218" InformativeScreenshot="906e0887dcd66e3fbfb6f11b323feb41.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/RGVlUc7_90qNdJUn5Ee76Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -156,6 +181,9 @@
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:NTypeInto.Text>
                 <uix:NTypeInto.VerifyOptions>
                   <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                     <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -167,7 +195,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,287" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="karmaehr.com/login" CVScreenId="bb43d5a3-125f-47df-ab1d-933a8d0c8d0d" ContentHash="S0aMZyhp5EiA4yVMvpXzjg" CvElementArea="1320, 625, 104, 43" CvTextArea="1349, 639, 44, 15" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1322, 627, 100, 39" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="b8b54908-acb2-405d-8625-3c614ff6068a" InformativeScreenshot="5fbcd2dfb065a8180dcaafe62323f592.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/LKcDZeKv_0iEigFIW_hD9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -179,7 +207,7 @@
                 </uix:NClick.Target>
               </uix:NClick>
             </Sequence>
-            <Sequence DisplayName="Delay 1 second" sap:VirtualizedContainerService.HintSize="450,206" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Delay 1 second" sap:VirtualizedContainerService.HintSize="486,206" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,7 +215,7 @@
               </sap:WorkflowViewStateService.ViewState>
               <Delay DisplayName=" Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Manage Patients'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Get all patient information." ClickType="Single" DisplayName="Click 'Manage Patients'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,297" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-dashboard" CVScreenId="a0a79e36-f6ad-4e2e-ad19-f2d643bbf613" ContentHash="Gwq-xwsDjUWk0gNfABNjsg" CvTextArea="63, 362, 124, 21" CvTextArgument="Manage Patients" CvType="Text" DesignTimeRectangle="60, 359, 126, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='P' /&gt;" Guid="05daf3df-389b-4ba7-9ff6-acfa92fb6175" InformativeScreenshot="5fef62afc335cce508dc58c75b87c7a6.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/kAhOf9Ng402B8kIHn418Cw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | DashBoard' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -210,8 +238,13 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into - Search for Test Patients" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="test" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="For demo purpose only process TEST patients." ClipboardMode="Never" DisplayName="Type Into - Search for Test Patients" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,277" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="test" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" ContentHash="rLtwVXvOZE6usUAaB9qHbw" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" InformativeScreenshot="99a5f0cc96f355b3429692afe4528137.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
@@ -231,8 +264,274 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished looking for test patients - check git&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished looking for test patients - check git&quot;]" />
+            <Assign sap2010:Annotation.AnnotationText="Set initial value of 2 to process first patient on the Manage Patient page. The 'Click' activity below requires 'tableRow' property that starts from 2 and increments to 11 to process all 10 patients on the Manage Patient page." DisplayName="Assign - Intialize intRowIndex to 2" sap:VirtualizedContainerService.HintSize="486,269" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[intRowIndex]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">2</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="There are maximum of 10 patients on a page. So iterate through the entire first page with intRowIndex values from 2 to 11 (less than 12)." DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,3654" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence sap2010:Annotation.AnnotationText="Process the patient identified by the current row." DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,3487" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click Patient link to open patient details." ClickType="Single" DisplayName="Click Patients" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,297" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="998ba5f4-b3da-4f63-89c7-20b8f7a24d50" ContentHash="HJFOpjZe0UmEhA8aV6vMPA" DesignTimeRectangle="348, 443, 93, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='A' /&gt;&quot;, intRowIndex)]" Guid="f478b353-0aa6-4fb8-a13b-263fbd526229" InformativeScreenshot="d3160ea6c1cc2f0761885a649b41aee9.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="331, 442, 226, 42" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='patientsList' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='DIV' colName='Patient Name' tableCol='1' tableRow='{0}' check:innerText='PandaDoc Test&amp;#xA;    Active' /&gt;&quot;, intRowIndex)]" Guid="ca40d802-0398-40f2-9d42-cbed7ca0b939" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="0aec29e5-5f33-435a-b538-33a022f0d08f" ContentHash="FjzPvqbaYUyPbMbf17E1TA" CvTextArea="408, 433, 99, 16" CvTextArgument="View Patient" CvType="Text" DesignTimeRectangle="411, 430, 94, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='font-weight-bold' tag='SPAN' innertext='View Patient' parentclass='breadcrumb-title' visibleinnertext='View Patient' /&gt;" Guid="1d363fb4-a29f-46d2-bbdb-26a9e7b8a46c" InformativeScreenshot="022235657955639c514ada69acbed85f.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/Jh99B6nnTk-X27JibODNCA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="0aec29e5-5f33-435a-b538-33a022f0d08f" CvTextArea="281, 433, 226, 19" CvTextArgument="Manage Patient / View Patient" CvType="Text" DesignTimeRectangle="282, 425, 227, 32" FuzzySelectorArgument="&lt;webctrl class='breadcrumb-title' matching:class='fuzzy' fuzzylevel:class='0.0' type='' tag='DIV' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Manage Patient/View Patient' visibleinnertext='Manage Patient/View Patient' check:innerText='Manage Patient/View Patient' /&gt;" Guid="01b229cd-e15f-499d-9f55-3415b1d73724" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Sequence sap2010:Annotation.AnnotationText="Collect Patient Data" sap:VirtualizedContainerService.HintSize="450,2489" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="strPatientFirstName" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientMiddleName" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientLastName" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientDOB" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientAddressLine1" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientAddressCountry" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientAddressState" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientAddressCity" />
+                      <Variable x:TypeArguments="x:String" Name="strPatientAddressZip" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Navigate to Patient Details" ClickType="Single" DisplayName="Click 'Patient Details'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="a5e597ef-321e-437c-97fa-073c8961f741" ContentHash="Q2WkICGe90SXUY55JnmYvw" DesignTimeRectangle="624, 476, 153, 45" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aaname=' Patient Details ' aria-role='tab' tag='BUTTON' visibleinnertext='Patient Details' /&gt;" Guid="d907d96e-3be0-4cf0-ae91-ffba148f350d" InformativeScreenshot="0873173afd102f2bf5e8a6d304f9cc59.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/28jEHxYu8kq0Ng1ggriOZg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="2f7e9e72-568c-464a-bdc2-1d853d3d1e11" ContentHash="ot8_bKFSTEa7I7EhbtIwmw" DesignTimeRectangle="298, 537, 163, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Personal Details ' aria-role='tab' tag='BUTTON' visibleinnertext='Personal Details' /&gt;" Guid="63e382f2-7a7d-404b-9969-c7346e022e9b" InformativeScreenshot="d3b54317271e99a41803e4f3e09eb89e.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/VGQsgc_enU-if8VuFt0Mag" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Patient Details page successfully reached.&quot;]" />
+                    <uix:NGetText DisplayName="Get Text 'First Name*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientFirstName]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="263c8a44-d1a7-46ea-a1df-163e8b4ae8ef" ContentHash="FV6u130IK0yTxNkhb-pkCw" DesignTimeRectangle="314, 626, 388, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control small ng-untouched ng-pristine' placeholder='First Name' formcontrolname='firstName' parentclass='form-group' /&gt;" Guid="71106f92-63d8-4767-b630-5c1481fb9324" InformativeScreenshot="b076e23afe960b993cd7e197e9b6962d.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/vpS5dRwMhkiwhK8Ze1cBxg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" DesignTimeRectangle="314, 600, 75, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='LABEL' aaname='First Name' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='First Name*' /&gt;" Guid="0fdfe27c-3c45-4f2c-810f-7a492f4f796a" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Middle Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientMiddleName]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" ContentHash="x13cFAlgDU6pPCkYvn1x6Q" DesignTimeRectangle="726, 626, 387, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='form-control small ng-untouched ng-pristine' matching:class='fuzzy' fuzzylevel:class='0.0' formcontrolname='middleName' parentclass='form-group' /&gt;" Guid="e28419af-db74-4939-8c23-76778aa978ac" InformativeScreenshot="cc52bdf4cbafb9241bf043b15279690d.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/WIGZ4ZypqkeqZVxSsPwSKg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" DesignTimeRectangle="726, 600, 86, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Middle Name' class='form-label' tag='LABEL' innertext='Middle Name' visibleinnertext='Middle Name' check:innerText='Middle Name' /&gt;" Guid="f28de2c4-51ac-4d64-80f8-455b66d1a6dc" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Last Name*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientLastName]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" ContentHash="-hEIL6wOTEOzHiF5L5Ko7w" DesignTimeRectangle="1137, 626, 388, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='form-control small ng-untouched ng-pristine' placeholder='Last Name' formcontrolname='lastName' parentclass='form-group' /&gt;" Guid="53a4483a-4d60-4707-9ae8-9d79d4dde60d" InformativeScreenshot="b2b5a245ed9856f30c9c367ae59244f3.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/t1oFJaT4DUG_9F0hv7MQSA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" CvTextArea="1136, 604, 75, 13" CvTextArgument="Last Name*" CvType="Text" DesignTimeRectangle="1137, 600, 73, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' class='form-label' tag='LABEL' check:innerText='Last Name*' /&gt;" Guid="90ca18bc-7c61-46f6-a229-1891626f1e13" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Date of Birth *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientDOB]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" ContentHash="E7CEy42Si0edG30qjszY0g" DesignTimeRectangle="314, 715, 423, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' type='text' placeholder='MM/DD/YYYY' /&gt;" Guid="26568472-8592-49dd-aed9-3bb186754ff0" InformativeScreenshot="72f6585a17e19b235178c43fbb1db197.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/E_AZnoW-6kixptKz69R1Aw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" DesignTimeRectangle="314, 689, 91, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth ' class='form-label' tag='LABEL' check:innerText='Date of Birth *' /&gt;" Guid="bd053eed-12d5-453e-bb29-184f5a72901e" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Patient full name : &quot; + strPatientFirstName + &quot; &quot; + strPatientLastName + &quot; DOB : &quot; + strPatientDOB]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Address Details'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" ContentHash="r43fs-SHhE2pm45b-w89cQ" DesignTimeRectangle="493, 537, 160, 45" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aaname=' Address Details ' aria-role='tab' tag='BUTTON' visibleinnertext='Address Details' /&gt;" Guid="3996cd89-0b44-40fb-9b67-8b747369e1c1" InformativeScreenshot="a4d637a0c82e837e2609dd030f15ee25.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/ExWY6XaYEkyXyhYOjLDYzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="6226c1c2-36b4-41fa-8ec2-64ec66580222" ContentHash="19To-F5WaEmXiWM_qokfWw" DesignTimeRectangle="314, 600, 96, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' aaname='Address Line 1' /&gt;" Guid="12aee4c9-0320-481a-a3c9-4f91cdae2805" InformativeScreenshot="70738a532ddfeec60aa8535d7a975362.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/LFiCRB5hckSYBTCPfAjVbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Address Line 1*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientAddressLine1]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="6226c1c2-36b4-41fa-8ec2-64ec66580222" ContentHash="ca6_puMyHEOai2jOFt6XVw" DesignTimeRectangle="314, 626, 388, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control small ng-untouched ng-pristine' placeholder='Address Line 1' formcontrolname='addressLine1' /&gt;" Guid="d8fa1e7c-8600-4266-9922-2ec0ad7d1fcf" InformativeScreenshot="ac260fd70335a4135acbcff672a9d7de.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/Pca8FAL8DkG_jCzeSri35w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6226c1c2-36b4-41fa-8ec2-64ec66580222" DesignTimeRectangle="314, 600, 96, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form-label' tag='LABEL' aaname='Address Line 1' check:innerText='Address Line 1*' /&gt;" Guid="5e8f9d7b-bc32-4dd1-91f0-017706fdd957" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'City*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientAddressCity]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" ContentHash="iNWhT7lPxk-OqxlSrusRzw" CvElementArea="796, 715, 457, 50" CvType="InputBox" DesignTimeRectangle="813, 731, 82, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='ng-value-label ng-star-inserted' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="72d0d614-55dc-4f8b-9a6e-ed71f0710278" InformativeScreenshot="9a3e8832a7043f8e35f7c084b8cb6fba.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/7vbegguCfkSP_3jtvzcmVg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" CvTextArea="794, 695, 33, 16" CvTextArgument="City*" CvType="Text" DesignTimeRectangle="796, 691, 30, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='City' class='form-label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='City*' /&gt;" Guid="13ea18c2-520d-4910-973c-2f2ee874f3d1" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'State*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientAddressState]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="0f678dc4-f70c-4337-8e5f-43291b99cded" ContentHash="6KEI2r2o00mrBsw-C1EINw" CvElementArea="314, 715, 458, 50" CvType="InputBox" DesignTimeRectangle="331, 731, 92, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='ng-value-label ng-star-inserted' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="8c709c5b-e909-40d1-8473-9d962d03efe8" InformativeScreenshot="9d786127cab6ecc2023aac3b5980cf2e.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/W61WA_oLMkW1xrC5jTL9Vw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="0f678dc4-f70c-4337-8e5f-43291b99cded" CvTextArea="312, 695, 40, 13" CvTextArgument="State*" CvType="Text" DesignTimeRectangle="314, 691, 38, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='State' class='form-label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='State*' /&gt;" Guid="3c2236bf-e356-43af-ad7d-e7a448f202b2" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Country*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientAddressCountry]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="14ac0336-f394-4044-8ea9-1e19778241aa" ContentHash="1r8cwVfE8UyOb0x37B3tig" CvElementArea="1275, 624, 460, 49" CvType="InputBox" DesignTimeRectangle="1294, 640, 27, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='ng-value-label ng-star-inserted' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="0c0fb6b9-2759-4860-8ddf-47149c353dc9" InformativeScreenshot="a9f1d578b4a5ea18290cd19f5b6af8c9.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/SqoqUTt4kkGmJjLbqNvmNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="14ac0336-f394-4044-8ea9-1e19778241aa" CvTextArea="1276, 604, 59, 16" CvTextArgument="Country*" CvType="Text" DesignTimeRectangle="1277, 600, 58, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Country' class='form-label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Country*' /&gt;" Guid="39ac31ba-e1b6-4023-a8c2-52c7e85d4f12" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Zipcode*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" TextString="[strPatientAddressZip]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" ContentHash="Qcupb_RmukWzYXiaUTHZCg" DesignTimeRectangle="1277, 717, 458, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='p-inputtext p-component p-inputmask' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='Zipcode' /&gt;" Guid="99bb6188-0781-492e-8ba3-92fcb45779fd" InformativeScreenshot="9e8fbcb3b3cd0c88308d013386993ab0.jpg" IsResponsive="True" Reference="d8rTQAsYNUaEY4BfHsZk6g/P_9Mb9bTIUm4iGu-b55V-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" DesignTimeRectangle="1277, 691, 58, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Zipcode' class='form-label' tag='LABEL' check:innerText='Zipcode*' /&gt;" Guid="585a5ec5-cba5-4ae9-8a44-798038841160" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[strPatientAddressLine1 + &quot;, &quot; + strPatientAddressCity +  &quot;, &quot; + strPatientAddressState + &quot;, &quot; + strPatientAddressCountry + &quot;, &quot; + strPatientAddressZip]" />
+                  </Sequence>
+                  <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5" />
+                  <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="For demo purpose only process TEST patients." ClipboardMode="Never" DisplayName="Type Into - Search for Test Patients" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,277" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="Simulate" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="test" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" ContentHash="rLtwVXvOZE6usUAaB9qHbw" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" InformativeScreenshot="99a5f0cc96f355b3429692afe4528137.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="297, 264, 107, 42" CvType="Button" DesignTimeRectangle="298, 266, 104, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='primary-btn d-flex align-items-center' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Filters' visibleinnertext='FILTERS' check:innerText='FILTERS' /&gt;" Guid="8a3be0b2-a2a3-4d98-929d-f6a8c305fff6" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <Assign sap2010:Annotation.AnnotationText="Increment RowIndex so we can process the next patient row." DisplayName="Assign - Increment intRowIndex by 1" sap:VirtualizedContainerService.HintSize="450,211" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[intRowIndex]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[intRowIndex + 1]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="intRowIndex &lt; 5" />
+              </ui:InterruptibleDoWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

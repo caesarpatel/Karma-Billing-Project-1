@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FjzPvqbaYUyPbMbf17E1TA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="0aec29e5-5f33-435a-b538-33a022f0d08f" CvTextArea="408, 433, 99, 16" CvTextArgument="View Patient" CvType="Text" DesignTimeRectangle="411, 430, 94, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='font-weight-bold' tag='SPAN' innertext='View Patient' parentclass='breadcrumb-title' visibleinnertext='View Patient' /&gt;" Guid="1d363fb4-a29f-46d2-bbdb-26a9e7b8a46c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0aec29e5-5f33-435a-b538-33a022f0d08f" CvTextArea="281, 433, 226, 19" CvTextArgument="Manage Patient / View Patient" CvType="Text" DesignTimeRectangle="282, 425, 227, 32" FuzzySelectorArgument="&lt;webctrl class='breadcrumb-title' matching:class='fuzzy' fuzzylevel:class='0.0' type='' tag='DIV' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Manage Patient/View Patient' visibleinnertext='Manage Patient/View Patient' check:innerText='Manage Patient/View Patient' /&gt;" Guid="01b229cd-e15f-499d-9f55-3415b1d73724" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="022235657955639c514ada69acbed85f.jpg" xmlns="">0WK7hd_j2wkadnF7WXNu6dw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

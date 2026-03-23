@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FV6u130IK0yTxNkhb-pkCw" Reference="d8rTQAsYNUaEY4BfHsZk6g/vpS5dRwMhkiwhK8Ze1cBxg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="263c8a44-d1a7-46ea-a1df-163e8b4ae8ef" DesignTimeRectangle="314, 626, 388, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control small ng-untouched ng-pristine' placeholder='First Name' formcontrolname='firstName' parentclass='form-group' /&gt;" Guid="71106f92-63d8-4767-b630-5c1481fb9324" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9e5f3cc4-517d-429e-ac1c-e6999baea759" DesignTimeRectangle="314, 600, 75, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='LABEL' aaname='First Name' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='First Name*' /&gt;" Guid="0fdfe27c-3c45-4f2c-810f-7a492f4f796a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b076e23afe960b993cd7e197e9b6962d.jpg" xmlns="">0jLme2iXaJUaq9G3Ivo6cWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

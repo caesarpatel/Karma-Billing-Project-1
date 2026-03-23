@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Address Details",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ExWY6XaYEkyXyhYOjLDYzg",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/ExWY6XaYEkyXyhYOjLDYzg",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-23T19:54:05.6164928Z",
+  "Updated": "2026-03-23T19:54:05.6164928Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

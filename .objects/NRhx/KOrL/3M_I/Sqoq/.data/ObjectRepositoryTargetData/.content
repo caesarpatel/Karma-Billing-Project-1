@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1r8cwVfE8UyOb0x37B3tig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="14ac0336-f394-4044-8ea9-1e19778241aa" CvElementArea="1275, 624, 460, 49" CvType="InputBox" DesignTimeRectangle="1294, 640, 27, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='ng-value-label ng-star-inserted' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="0c0fb6b9-2759-4860-8ddf-47149c353dc9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="14ac0336-f394-4044-8ea9-1e19778241aa" CvTextArea="1276, 604, 59, 16" CvTextArgument="Country*" CvType="Text" DesignTimeRectangle="1277, 600, 58, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Country' class='form-label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Country*' /&gt;" Guid="39ac31ba-e1b6-4023-a8c2-52c7e85d4f12" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a9f1d578b4a5ea18290cd19f5b6af8c9.jpg" xmlns="">0jYbZoiriXUG7GTopNZbSEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

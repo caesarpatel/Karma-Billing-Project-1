@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Qcupb_RmukWzYXiaUTHZCg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" DesignTimeRectangle="1277, 717, 458, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='p-inputtext p-component p-inputmask' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='Zipcode' /&gt;" Guid="99bb6188-0781-492e-8ba3-92fcb45779fd" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="653bd714-1a05-4086-b59e-5ce62c7ee55e" DesignTimeRectangle="1277, 691, 58, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Zipcode' class='form-label' tag='LABEL' check:innerText='Zipcode*' /&gt;" Guid="585a5ec5-cba5-4ae9-8a44-798038841160" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9e8fbcb3b3cd0c88308d013386993ab0.jpg" xmlns="">0H4Pm06rP6UqDKuhfd2iF-g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
