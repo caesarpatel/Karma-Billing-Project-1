@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Mobile No.",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "_zfk1NpJ7kCmLL6YKizRCQ",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/_zfk1NpJ7kCmLL6YKizRCQ",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-23T23:37:53.1858166Z",
+  "Updated": "2026-03-23T23:37:53.1858166Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

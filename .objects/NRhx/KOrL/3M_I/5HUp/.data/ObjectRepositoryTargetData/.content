@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LNAe6iVHAk-7tbzLq2dPag" Reference="d8rTQAsYNUaEY4BfHsZk6g/5HUpNBo1NEOi4CAPHHNI_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="1ee39ffa-91a7-44e2-8031-b20ec94e307d" DesignTimeRectangle="314, 626, 337, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='p-inputtext p-component p-inputmask p-filled' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='Home Phone' /&gt;" Guid="63267c98-58a8-4d11-9b85-dcdbd1de7272" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1ee39ffa-91a7-44e2-8031-b20ec94e307d" DesignTimeRectangle="314, 600, 89, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='LABEL' aaname='Home Phone' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home Phone*' /&gt;" Guid="916bf725-358b-4d0d-ab39-1a3a2e25a429" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a92414d36c5b2de272425a56c5f7fe2d.jpg" xmlns="">0vQFN2kAX60-3zHsP1gi4Nw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

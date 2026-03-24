@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Do1LmPUnOUqlsKOZUmtsvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="1ee39ffa-91a7-44e2-8031-b20ec94e307d" DesignTimeRectangle="675, 626, 338, 45" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' placeholder='Mobile No.' /&gt;" Guid="9c2f0952-2d53-4d18-80de-ba2ffbc1f594" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1ee39ffa-91a7-44e2-8031-b20ec94e307d" DesignTimeRectangle="675, 600, 77, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Mobile No.' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' class='form-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='LABEL' visibleinnertext='Mobile No.*' check:innerText='Mobile No.*' /&gt;" Guid="116ebed5-788e-4faf-bae9-b7bb94887f39" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="01750669a229f8099f8821cd9615c94c.jpg" xmlns="">0CA0tKvvgi0WZGWqaY300Hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

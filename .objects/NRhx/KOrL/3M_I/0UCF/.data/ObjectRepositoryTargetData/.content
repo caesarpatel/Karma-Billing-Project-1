@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UmJzSM0o-UqS0D-fpAJc4g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="7335fe86-8681-44f3-ab90-2c2078550d63" DesignTimeRectangle="298, 801, 169, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList_info' tag='DIV' aria-role='status' parentclass='dataTables_wrapper no-footer' parentid='patientsList_wrapper' /&gt;" Guid="c078a783-b3ec-4af9-9a6e-28744a61e4b4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7d6078e64ba81fc763ac82fd1c521d9e.jpg" xmlns="">07ruJ-ONfXU-50i7cDy6xHg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

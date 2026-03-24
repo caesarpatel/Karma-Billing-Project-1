@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Primary Provider",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "1QHia7JoREaz1cwNEpBEYw",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/1QHia7JoREaz1cwNEpBEYw",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-23T23:26:44.8310492Z",
+  "Updated": "2026-03-23T23:26:44.8310492Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

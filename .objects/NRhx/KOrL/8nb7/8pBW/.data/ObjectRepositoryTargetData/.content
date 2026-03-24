@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="raZThjRYzkqBqVk_-Ei_CA" Reference="d8rTQAsYNUaEY4BfHsZk6g/8pBWRIKPNE22CJAvHrw1jw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="1ee39ffa-91a7-44e2-8031-b20ec94e307d" DesignTimeRectangle="314, 600, 89, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' aaname='Home Phone' visibleinnertext='Home Phone*' /&gt;" Guid="efe0158e-d7c7-4f59-aeb8-25cc3f4089c8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a8183004fa1900f0d03b82547ec3e3c4.jpg" xmlns="">0fqgoqmBdDk6H4kw5hRZQlg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
