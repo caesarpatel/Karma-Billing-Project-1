@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - Search for Test Patients",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qxfaLinO9k-BomaOR-jSAg",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/qxfaLinO9k-BomaOR-jSAg",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/6ez65SFHJkKAC4S9wSSKeQ",
+  "Created": "2026-03-24T00:45:46.0678736Z",
+  "Updated": "2026-03-24T00:45:46.0678736Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

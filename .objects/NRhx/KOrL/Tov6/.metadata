@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome EMR  Manage Patients",
+  "Type": "Screen",
+  "Id": "Tov6W38IJUie-wkM4HPy9A",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/Tov6W38IJUie-wkM4HPy9A",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/KOrLAqK0pk6yZ21hiEe7gQ",
+  "Created": "2026-03-24T01:30:08.5686434Z",
+  "Updated": "2026-03-24T01:30:08.5686434Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

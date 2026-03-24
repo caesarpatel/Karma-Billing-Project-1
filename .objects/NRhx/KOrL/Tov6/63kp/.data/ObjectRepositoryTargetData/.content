@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o5yu14RzJUCrUOV59eDu8Q" Reference="d8rTQAsYNUaEY4BfHsZk6g/63kpSjEudkG_AAwrxDDtqA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="6431beca-ca77-4732-9cce-1bc1edde2250" DesignTimeRectangle="1480, 1188, 61, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList_next' tag='A' /&gt;" Guid="b7856816-4ba0-4d57-a74d-64f84e868ac6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="af904a8d9a1a078c4269c4e039a35c31.jpg" xmlns="">0inl3sEi6jk-Dkpc7CZjlqw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

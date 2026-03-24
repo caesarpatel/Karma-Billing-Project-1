@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aYOiqvekK0mTr-KdpUsm9Q" Reference="d8rTQAsYNUaEY4BfHsZk6g/907FpB_CDUK1xtsFXuJ5Vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" DesignTimeRectangle="299, 426, 1242, 375" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' parentid='patientsList' /&gt;" Guid="c7e6db85-1a1b-4c88-abf7-e0520dccd0f6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="115ea619618f19323d39d90e8488e444.jpg" xmlns="">0LBJpkZZOj0u3pL51t6YTMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

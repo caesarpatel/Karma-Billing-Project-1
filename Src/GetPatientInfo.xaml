@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetPatientInfo" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="GetPatientInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetPatientInfo" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="GetPatientInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -33,6 +33,10 @@
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -68,26 +72,67 @@
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetPatientInfo" sap:VirtualizedContainerService.HintSize="650,359" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetPatientInfo" sap:VirtualizedContainerService.HintSize="767,997" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,336" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" ScopeGuid="69148ebe-8b4e-42d3-ac6e-3b90b4dec649" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome EMR  Manage Patients" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,974" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="f324e488-fead-48d6-bed5-c5b2d70d8069" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,780" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="state" />
+              <Variable x:TypeArguments="x:String" Name="stateOfNext" />
+              <Variable x:TypeArguments="x:String" Name="classOfNext" />
+              <Variable x:TypeArguments="x:String" Name="linkValueOfNext" />
+              <Variable x:TypeArguments="x:String" Name="isNextDisabled" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,358" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="class" DisplayName="Get Attribute 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,187" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[classOfNext]" ScopeIdentifier="f324e488-fead-48d6-bed5-c5b2d70d8069" Version="V5">
+                    <uix:NGetAttributeGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="6431beca-ca77-4732-9cce-1bc1edde2250" ContentHash="o5yu14RzJUCrUOV59eDu8Q" DesignTimeRectangle="1480, 1188, 61, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList_next' tag='A' /&gt;" Guid="b7856816-4ba0-4d57-a74d-64f84e868ac6" InformativeScreenshot="af904a8d9a1a078c4269c4e039a35c31.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/63kpSjEudkG_AAwrxDDtqA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NGetAttributeGeneric.Target>
+                  </uix:NGetAttributeGeneric>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="aria-disabled" DisplayName="Get Attribute 'Next(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,196" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[isNextDisabled]" ScopeIdentifier="f324e488-fead-48d6-bed5-c5b2d70d8069" Version="V5">
+              <uix:NGetAttributeGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="dcc9abd8-3534-4921-a03c-42d66bc1ed48" ContentHash="VvyxYP_DJ0WhjieRMS-ijQ" DesignTimeRectangle="1480, 1188, 61, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList_next' tag='A' /&gt;" Guid="f4d21ac5-4377-4228-a493-073624e5bb61" InformativeScreenshot="af904a8d9a1a078c4269c4e039a35c31.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/NtH88g7eqEahRq4BYXzWfA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetAttributeGeneric.Target>
+            </uix:NGetAttributeGeneric>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Is Next disabled? &quot; + isNextDisabled]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -99,23 +144,7 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" Version="V2">
-          <uix:TargetApp.Arguments>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Arguments>
-          <uix:TargetApp.FilePath>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.FilePath>
-          <uix:TargetApp.Selector>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Selector>
-          <uix:TargetApp.Url>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Url>
-          <uix:TargetApp.WorkingDirectory>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.WorkingDirectory>
-        </uix:TargetApp>
+        <uix:TargetApp Area="1847, 14, 1604, 1376" BrowserType="Chrome" ContentHash="AEWp_CDXO0Slt799gLLmfA" IconBase64="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" InformativeScreenshot="ee14f2d3e6b7307fc88868405e4411fe.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/Tov6W38IJUie-wkM4HPy9A" Selector="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" Url="https://karmaehr.com/manage-patients" Version="V2" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
