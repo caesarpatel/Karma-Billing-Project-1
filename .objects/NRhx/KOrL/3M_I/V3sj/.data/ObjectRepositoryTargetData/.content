@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="59eS5r4COEO-0vMaQG5PNw" Reference="d8rTQAsYNUaEY4BfHsZk6g/V3sjN9kDakqQh34IsxOohw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="d6fbf1c9-cdd5-4705-95ec-618a76675ad6" DesignTimeRectangle="16, 351, 234, 40" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='A' innertext='Manage Patients' parentclass='nav-item' visibleinnertext='Manage Patients' /&gt;" Guid="5d68a40d-df33-48b9-b84c-a9976a95a189" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d6fbf1c9-cdd5-4705-95ec-618a76675ad6" DesignTimeRectangle="16, 292, 234, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='nav-link' matching:class='fuzzy' fuzzylevel:class='0.0' tag='A' aaname='DashBoard' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='DashBoard' parentclass='nav-item' visibleinnertext='DashBoard' check:innerText='DashBoard' /&gt;" Guid="346b28f1-476b-4cfe-8729-6d635431daa8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5e972d1c0dbb3bcf2299d086a11b8995.jpg" xmlns="">0waFYklDcr0S_-scNCbjflQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

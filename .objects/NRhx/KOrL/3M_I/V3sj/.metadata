@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Manage Patients(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "V3sjN9kDakqQh34IsxOohw",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/V3sjN9kDakqQh34IsxOohw",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-24T04:44:54.8011286Z",
+  "Updated": "2026-03-24T04:44:54.8011286Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
