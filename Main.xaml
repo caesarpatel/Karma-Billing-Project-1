@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -43,6 +43,7 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -99,12 +100,15 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800,4353" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="995,8107" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strPatientListFilter" />
       <Variable x:TypeArguments="x:String" Name="isNextDisabled" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="dtPatients" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -116,6 +120,13 @@
         <OutArgument x:TypeArguments="x:String">[strPatientListFilter]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="Create a Data Table to store patient data in a structtured format. This Data Table will be used eventually to export all scraped patient data to a spreadsheet." DataTable="[dtPatients]" DisplayName="Build Data Table - To Put Pt Data" sap:VirtualizedContainerService.HintSize="556,169" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_First_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Middle_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Last_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_DOB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Home_x0020_Phone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Mobile_x0020_Phone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Address_x0020_Line_x0020_1&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_City&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_State&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Zipcode&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Pt_x0020_Contact_x0020_Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Provider_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
     <Assign sap2010:Annotation.AnnotationText="This is a flag that indicates if the Next button in pagination disabled." sap:VirtualizedContainerService.HintSize="556,220" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[isNextDisabled]</OutArgument>
@@ -129,13 +140,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,3835" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,7420" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,3641" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,7226" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strPagingStatus" />
               <Variable x:TypeArguments="x:Int32" Default="0" Name="intRowIndex" />
@@ -234,25 +245,6 @@
                 </uix:NClick.Target>
               </uix:NClick>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,368" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,257" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Delay 1 second" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Delay DisplayName=" Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                  </Sequence>
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
             <uix:NCheckState sap2010:Annotation.AnnotationText="Check if the main page has loaded, before proceeding to click on 'Manage Patients' menu item." DisplayName="Check App State - Ensure the page loaded" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,118" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_23">
@@ -275,7 +267,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="d6fbf1c9-cdd5-4705-95ec-618a76675ad6" ContentHash="59eS5r4COEO-0vMaQG5PNw" DesignTimeRectangle="16, 351, 234, 40" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aaname='Manage Patients' tag='A' innertext='Manage Patients' parentclass='nav-item' visibleinnertext='Manage Patients' /&gt;" Guid="5d68a40d-df33-48b9-b84c-a9976a95a189" InformativeScreenshot="5e972d1c0dbb3bcf2299d086a11b8995.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/V3sjN9kDakqQh34IsxOohw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="d6fbf1c9-cdd5-4705-95ec-618a76675ad6" DesignTimeRectangle="16, 292, 234, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='nav-link' matching:class='fuzzy' fuzzylevel:class='0.0' tag='A' aaname='DashBoard' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='DashBoard' parentclass='nav-item' visibleinnertext='DashBoard' check:innerText='DashBoard' /&gt;" Guid="346b28f1-476b-4cfe-8729-6d635431daa8" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -318,7 +310,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <Sequence sap2010:Annotation.AnnotationText="Scrape data for all patients on one page." DisplayName="Sequence - Scrape Pt Data on One Page" sap:VirtualizedContainerService.HintSize="520,2544" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <Sequence sap2010:Annotation.AnnotationText="Scrape data for all patients on one page." DisplayName="Sequence - Scrape Pt Data on One Page" sap:VirtualizedContainerService.HintSize="520,6497" sap2010:WorkflowViewState.IdRef="Sequence_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -480,9 +472,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="There are maximum of 10 patients on a page. So iterate through the entire first page with intRowIndex values from 2 to 11 (less than 12)." Condition="[intRowIndex &lt; intMaxItemsInPage]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,1325" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="There are maximum of 10 patients on a page. So iterate through the entire first page with intRowIndex values from 2 to 11 (less than 12)." Condition="[intRowIndex &lt; intMaxItemsInPage]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,5278" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                 <ui:InterruptibleDoWhile.Body>
-                  <Sequence sap2010:Annotation.AnnotationText="Process the patient identified by the current row." DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,1158" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence sap2010:Annotation.AnnotationText="Process the patient identified by the current row." DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,5111" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,7 +516,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <Sequence sap2010:Annotation.AnnotationText="Scrape individual patient data" DisplayName="Sequence - Scrape Individual Patient Data" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence sap2010:Annotation.AnnotationText="Scrape individual patient data" DisplayName="Sequence - Scrape Individual Patient Data" sap:VirtualizedContainerService.HintSize="450,4041" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="strPatientFirstName" />
                         <Variable x:TypeArguments="x:String" Name="strPatientMiddleName" />
@@ -543,7 +535,7 @@
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
@@ -765,7 +757,8 @@
                           </uix:TargetAnchorable>
                         </uix:NGetText.Target>
                       </uix:NGetText>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Home Phone : &quot; + strPatientContactHomePhone + &quot; Mobile Phone : &quot; + strPatientContactMobilePhone]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Home Phone : &quot; + strPatientContactHomePhone + &quot; Mobile Phone : &quot; + strPatientContactMobilePhone]" />
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strPatientFirstName, strPatientMiddleName, strPatientLastName, strPatientDOB, strPatientEmail, strPatientContactHomePhone, strPatientContactMobilePhone, strPatientAddressLine1, strPatientAddressCity, strPatientAddressState, strPatientAddressZip, strPatientAddressCountry, strPatientPrimaryProvider}]" DataTable="[dtPatients]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                     </Sequence>
                     <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5" />
                     <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="For demo purpose only process TEST patients." ClipboardMode="Never" DisplayName="Type Into - Search for Test Patients" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,349" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="Simulate" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Text="[strPatientListFilter]" Version="V5">

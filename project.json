@@ -4,8 +4,10 @@
   "description": "Karma Billing Project to demonstrated opening Karma EHR and extract values from it.",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.4.1]",
     "UiPath.System.Activities": "[25.12.2]",
-    "UiPath.UIAutomation.Activities": "[25.10.26]"
+    "UiPath.UIAutomation.Activities": "[25.10.26]",
+    "UiPath.Word.Activities": "[2.4.1]"
   },
   "webServices": [],
   "entitiesStores": [],
