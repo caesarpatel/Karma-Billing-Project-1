@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestReadTable" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="TestReadTable_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestReadTable" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="TestReadTable_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,21 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -50,13 +65,150 @@
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestReadTable" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestReadTable" sap:VirtualizedContainerService.HintSize="729,958" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: EMR | View Patient" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,935" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="4ba0573a-16a3-481a-8650-fffc19c6ea84" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,741" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CPTColumnName">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">CPT Code</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="DiagCode" />
+              <Variable x:TypeArguments="sd2:DataTable1" Name="dtPatientSoapNotes" />
+              <Variable x:TypeArguments="x:String" Name="intRowIndex" />
+              <Variable x:TypeArguments="x:String" Name="DateofService">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">02/16/2026</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="DateColumnName">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">Date</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="DiagColumnName">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">Diagnosis Code</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="CPTCode" />
+              <Variable x:TypeArguments="x:String" Name="StatusColumnName">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">Status</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="Status" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable1" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='0' Name='Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Provider' ReferenceIdx='1' Name='Provider'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='2' Name='Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Diagnosis Code' ReferenceIdx='3' Name='Diagnosis Code'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='CPT Code' ReferenceIdx='4' Name='CPT Code'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='5' Name='Actions' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;column name='Provider' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Diagnosis Code' attr='fulltext' /&gt;&lt;column name='CPT Code' attr='fulltext' /&gt;&lt;column name='Actions' attr='fulltext' /&gt;&lt;/extract-table&gt;" ExtractedData="[dtPatientSoapNotes]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4ba0573a-16a3-481a-8650-fffc19c6ea84" Version="V5">
+              <uix:NExtractDataGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="https://karmaehr.com/manage-patients/view/soap-note" DesignTimeRectangle="314, 379, 1225, 635" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='soapNoteList' tag='TABLE' /&gt;" Guid="a3542258-23c9-49f2-b41d-27682da317f3" InformativeScreenshot="c50acc40d203269ce348175c4f44f466.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractDataGeneric.Target>
+            </uix:NExtractDataGeneric>
+            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[intRowIndex]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">["1"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim row = dt.AsEnumerable().&#xD;&#xA;    FirstOrDefault(Function(r) r( dateColumnName   ).ToString.Trim = dos)&#xD;&#xA;&#xD;&#xA;If row IsNot Nothing Then&#xD;&#xA;    status = row(statusColumnName).ToString&#xD;&#xA;    dc = row(dcColumnName).ToString&#xD;&#xA;&#x9;cpt =  row(cptColumnName).ToString&#xD;&#xA;Else&#xD;&#xA;    status = Nothing&#xD;&#xA;&#x9;dc = Nothing&#xD;&#xA;&#x9;cpt = Nothing&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="sd3:DataTable" x:Key="dt">
+                  <VisualBasicValue x:TypeArguments="sd3:DataTable" ExpressionText="dtPatientSoapNotes" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="dc">
+                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="DiagCode" />
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dos">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateofService" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dateColumnName">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateColumnName" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dcColumnName">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DiagColumnName" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="cpt">
+                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="CPTCode" />
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="cptColumnName">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CPTColumnName" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="statusColumnName">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="StatusColumnName" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="status">
+                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Status" />
+                </OutArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Status: &quot; + Status + &quot; Diag Code : &quot; + DiagCode + &quot; CPT Code: &quot; + CPTCode]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1786, 100, 1618, 1106" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1ee1ea26827f2efda46a1c8431c400c0.jpg" Selector="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" Url="https://karmaehr.com/manage-patients/view/soap-note" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
