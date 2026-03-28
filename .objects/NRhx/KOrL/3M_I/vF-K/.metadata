@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Soap Note",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vF-K-cHMX0ynkkhbjBYeNQ",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/vF-K-cHMX0ynkkhbjBYeNQ",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-27T22:06:52.8997526Z",
+  "Updated": "2026-03-27T22:06:52.8997526Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Soap Note(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "2lNMRe6g2Ui2T0StZ4y-yA",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/2lNMRe6g2Ui2T0StZ4y-yA",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-28T00:01:59.6646235Z",
+  "Updated": "2026-03-28T00:01:59.6646235Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

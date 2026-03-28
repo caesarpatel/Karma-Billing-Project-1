@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yYTMZo2KoUieKRyfnBL52w" Reference="d8rTQAsYNUaEY4BfHsZk6g/yiiUraZai0Ww3SCkWM2pqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/soap-note" DesignTimeRectangle="314, 668, 1323, 733" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='soapNoteList_wrapper' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;" Guid="16ff7cf6-ae1d-405e-8d92-4f4e777c2b2d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0735fcb8-a982-4527-8030-0bc0d2aeb89f" DesignTimeRectangle="314, 616, 108, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='page-title' tag='DIV' type='' aaname='Soap Note' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Soap Note' /&gt;" Guid="82d8ccf6-cf3b-4275-a05a-f96bdef3b3a4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7e69a3ffd823076b890e3cfc0c3b398f.jpg" xmlns="">0d5J2JL8RD0mIfl9BDiCXcg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

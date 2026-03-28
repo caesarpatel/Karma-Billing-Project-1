@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="HJFOpjZe0UmEhA8aV6vMPA" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="AckDlSINSkyfXwaTwEpk4A" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="998ba5f4-b3da-4f63-89c7-20b8f7a24d50" DesignTimeRectangle="348, 443, 93, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='A' /&gt;&quot;, intRowIndex)]" Guid="f478b353-0aa6-4fb8-a13b-263fbd526229" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
-      <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="1">
-          <Target DesignTimeRectangle="331, 442, 226, 42" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='patientsList' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='DIV' colName='Patient Name' tableCol='1' tableRow='{0}' check:innerText='PandaDoc Test&amp;#xA;    Active' /&gt;&quot;, intRowIndex)]" Guid="ca40d802-0398-40f2-9d42-cbed7ca0b939" SearchSteps="FuzzySelector" />
-        </scg:List>
-      </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="d3160ea6c1cc2f0761885a649b41aee9.jpg" xmlns="">0VH_hM_6zskyb2RzMWbtVrQ</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="55ad661c-ad66-4ae1-88d6-b0a0ed0c1c0f" DesignTimeRectangle="348, 449, 130, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='Patient Name' tableCol='1' parentid='patientsList' /&gt;" Guid="dc43391e-40c6-45f1-b8bf-b4e6eff9d245" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f60710e7c29b280a23f8d992470b5b86.jpg" xmlns="">0fIUo_YfDxUmFg7xk7i-U3Q</imageRef>
     </TargetAnchorable>
-    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
-      <ObjectRepositoryVariableData IsString="False" Name="intRowIndex" />
-    </scg:List>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

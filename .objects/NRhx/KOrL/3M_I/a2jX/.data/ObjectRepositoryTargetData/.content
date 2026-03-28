@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="98jIw1WMdESsFFASVnrVWQ" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="NZAxL65qgk-f4sQViP5UmA" Reference="d8rTQAsYNUaEY4BfHsZk6g/a2jXb9P3oUaFyKZuTAikyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="299, 320, 463, 40" CvType="InputBox" DesignTimeRectangle="301, 321, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl tag='INPUT' parentid='patientsList_filter' placeholder='Search Patient Name' type='search' /&gt;" Guid="79fc2931-3aa5-486d-87a3-93363493ec38" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="1">
           <Target CVScreenId="9cffff64-57bb-466d-96bc-8a4c5f128d46" CvElementArea="297, 264, 107, 42" CvType="Button" DesignTimeRectangle="298, 266, 104, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='primary-btn d-flex align-items-center' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Filters' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Filters' visibleinnertext='FILTERS' check:innerText='FILTERS' /&gt;" Guid="8a3be0b2-a2a3-4d98-929d-f6a8c305fff6" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="99a5f0cc96f355b3429692afe4528137.jpg" xmlns="">0Ccy6XUnfoESySwdqq3GYNw</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="99a5f0cc96f355b3429692afe4528137.jpg" xmlns="">02YWUCpPtXUioYy0ElrwVvw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>

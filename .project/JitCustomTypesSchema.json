@@ -38,6 +38,46 @@
         "hash": "NExtractDataGeneric`1_1|DataTable|F1rqMqWLPWiejDjjrR4vIzWdxaDer7ftiZsQpDQ9us",
         "assemblyName": "Studio.Generated.TypedDataTable1"
       }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "NExtractDataGeneric`1_2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|fLfCRGJHilecoI1byxIxzfm5appVRP2Je5RBrifjO8",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Provider",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Diagnosis Code",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "CPT Code",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Actions",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|MJ3DBTzpJ2wJsW6Hj7UYrIIrS9J6BKwfDzSBydB6w",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
     }
   ]
 }

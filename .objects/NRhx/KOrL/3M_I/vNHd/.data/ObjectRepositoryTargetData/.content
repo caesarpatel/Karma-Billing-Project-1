@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2fW8xBzMxk22TcMoDWPLnw" Reference="d8rTQAsYNUaEY4BfHsZk6g/vNHdBSnrH0uLXvtP3RkMYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="abc83f42-308a-4ca4-8601-72528030f533" DesignTimeRectangle="348, 449, 113, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='Patient Name' tableCol='1' /&gt;" Guid="50fe078d-4c5a-40e9-903d-072d23f5ad53" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="84c3f25c2a48f4695e37b384c485f8d9.jpg" xmlns="">0tA5nCxBxUUyRWY7wC6Po3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

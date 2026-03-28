@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Brenda Bermudez",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vNHdBSnrH0uLXvtP3RkMYA",
+  "Reference": "d8rTQAsYNUaEY4BfHsZk6g/vNHdBSnrH0uLXvtP3RkMYA",
+  "ParentRef": "d8rTQAsYNUaEY4BfHsZk6g/3M_Ie5-pcUmuIeYQs6Pe4w",
+  "Created": "2026-03-27T20:55:17.4071052Z",
+  "Updated": "2026-03-27T20:55:17.4071052Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

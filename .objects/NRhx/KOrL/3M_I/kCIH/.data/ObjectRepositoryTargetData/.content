@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uk0gdNMiikSTJYjNH6T9QQ" Reference="d8rTQAsYNUaEY4BfHsZk6g/kCIHL3DwQUy78aXYno7umg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/soap-note" CVScreenId="3e03732e-7676-4fac-b4ea-786d9dd5288b" CvTextArea="345, 791, 1920, 16" CvTextArgument="02/16/2026 Vanessa Munoz Completed F41.1 90837" CvType="Text" DesignTimeRectangle="315, 766, 3077, 65" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='soapNoteList' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="3fb78525-cb44-490d-82ed-c5142e4b7a98" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="773eebd2e52f1816abf42d3b310e1ebd.jpg" xmlns="">0tUR-oDxpQ0WYiGOhem8cag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

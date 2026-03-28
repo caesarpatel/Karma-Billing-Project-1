@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Su4aJnN9kijFzV-fVQXVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/initial-psychiatry-evaluation" CVScreenId="b1ccf7a9-b36e-4253-8264-60c1c439c68d" DesignTimeRectangle="761, 551, 77, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Soap Note' parentclass='p-menuitem-link' visibleinnertext='Soap Note' /&gt;" Guid="91b2ed96-e67e-458a-a73d-af90f3188bc3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="83389f3625c8d3aea746294e94c95820.jpg" xmlns="">09kxP5bOcv0GPLtYqHSeTxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

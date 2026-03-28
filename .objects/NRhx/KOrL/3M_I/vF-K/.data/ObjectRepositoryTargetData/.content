@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9N4BOJttlEWnaBcfBsoagg" Reference="d8rTQAsYNUaEY4BfHsZk6g/vF-K-cHMX0ynkkhbjBYeNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/initial-psychiatry-evaluation" CVScreenId="837ae033-180f-4a03-81bf-8f26af713626" CvTextArea="759, 562, 79, 19" CvTextArgument="Soap Note" CvType="Text" DesignTimeRectangle="761, 559, 77, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='4' tag='SPAN' /&gt;" Guid="7146f182-b0b9-4e58-b670-85e58d0c60fe" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="837ae033-180f-4a03-81bf-8f26af713626" CvTextArea="313, 615, 382, 25" CvTextArgument="Manage Initial Psychiatric Evaluation" CvType="Text" DesignTimeRectangle="314, 609, 380, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='page-title' tag='DIV' type='' aaname='Manage Initial Psychiatric Evaluation' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Manage Initial Psychiatric Evaluation' /&gt;" Guid="ece3d57a-6692-404a-925e-7252c53dac08" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="478699725fc88ea72757e0c4bb5d6214.jpg" xmlns="">0L-ow5Bz5BU-BpE-RWFJ0eQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

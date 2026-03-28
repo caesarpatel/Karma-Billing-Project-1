@@ -101,7 +101,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestReadTable" sap:VirtualizedContainerService.HintSize="729,958" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestReadTable" sap:VirtualizedContainerService.HintSize="967,958" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -115,35 +115,15 @@
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,741" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="CPTColumnName">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">CPT Code</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="CPT Code" Name="CPTColumnName" />
               <Variable x:TypeArguments="x:String" Name="DiagCode" />
               <Variable x:TypeArguments="sd2:DataTable1" Name="dtPatientSoapNotes" />
               <Variable x:TypeArguments="x:String" Name="intRowIndex" />
-              <Variable x:TypeArguments="x:String" Name="DateofService">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">02/16/2026</Literal>
-                </Variable.Default>
-              </Variable>
-              <Variable x:TypeArguments="x:String" Name="DateColumnName">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">Date</Literal>
-                </Variable.Default>
-              </Variable>
-              <Variable x:TypeArguments="x:String" Name="DiagColumnName">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">Diagnosis Code</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="02/16/2026" Name="DateofService" />
+              <Variable x:TypeArguments="x:String" Default="Date" Name="DateColumnName" />
+              <Variable x:TypeArguments="x:String" Default="Diagnosis Code" Name="DiagColumnName" />
               <Variable x:TypeArguments="x:String" Name="CPTCode" />
-              <Variable x:TypeArguments="x:String" Name="StatusColumnName">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">Status</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="Status" Name="StatusColumnName" />
               <Variable x:TypeArguments="x:String" Name="Status" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
@@ -151,10 +131,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable1" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='0' Name='Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Provider' ReferenceIdx='1' Name='Provider'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='2' Name='Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Diagnosis Code' ReferenceIdx='3' Name='Diagnosis Code'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='CPT Code' ReferenceIdx='4' Name='CPT Code'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='5' Name='Actions' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;column name='Provider' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Diagnosis Code' attr='fulltext' /&gt;&lt;column name='CPT Code' attr='fulltext' /&gt;&lt;column name='Actions' attr='fulltext' /&gt;&lt;/extract-table&gt;" ExtractedData="[dtPatientSoapNotes]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4ba0573a-16a3-481a-8650-fffc19c6ea84" Version="V5">
+            <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable1" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='0' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Provider' ReferenceIdx='1' Name='Provider'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='2' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Diagnosis Code' ReferenceIdx='3' Name='Diagnosis Code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='CPT Code' ReferenceIdx='4' Name='CPT Code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='5' Name='Actions' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;column name='Provider' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Diagnosis Code' attr='fulltext' /&gt;&lt;column name='CPT Code' attr='fulltext' /&gt;&lt;column name='Actions' attr='fulltext' /&gt;&lt;/extract-table&gt;" ExtractedData="[dtPatientSoapNotes]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4ba0573a-16a3-481a-8650-fffc19c6ea84" Version="V5">
               <uix:NExtractDataGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://karmaehr.com/manage-patients/view/soap-note" DesignTimeRectangle="314, 379, 1225, 635" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='soapNoteList' tag='TABLE' /&gt;" Guid="a3542258-23c9-49f2-b41d-27682da317f3" InformativeScreenshot="c50acc40d203269ce348175c4f44f466.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NExtractDataGeneric.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:String x:Key="bbbffa17-1024-47ac-a79a-41b860f664d0">Share</x:String>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NExtractDataGeneric>
             <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
@@ -164,35 +149,17 @@
                 <InArgument x:TypeArguments="x:String">["1"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim row = dt.AsEnumerable().&#xD;&#xA;    FirstOrDefault(Function(r) r( dateColumnName   ).ToString.Trim = dos)&#xD;&#xA;&#xD;&#xA;If row IsNot Nothing Then&#xD;&#xA;    status = row(statusColumnName).ToString&#xD;&#xA;    dc = row(dcColumnName).ToString&#xD;&#xA;&#x9;cpt =  row(cptColumnName).ToString&#xD;&#xA;Else&#xD;&#xA;    status = Nothing&#xD;&#xA;&#x9;dc = Nothing&#xD;&#xA;&#x9;cpt = Nothing&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim row = dt.AsEnumerable().&#xA;    FirstOrDefault(Function(r) r( dateColumnName   ).ToString.Trim = dos)&#xA;&#xA;If row IsNot Nothing Then&#xA;    status = row(statusColumnName).ToString&#xA;    dc = row(dcColumnName).ToString&#xA;&#x9;cpt =  row(cptColumnName).ToString&#xA;Else&#xA;    status = Nothing&#xA;&#x9;dc = Nothing&#xA;&#x9;cpt = Nothing&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
               <ui:InvokeCode.Arguments>
-                <InArgument x:TypeArguments="sd3:DataTable" x:Key="dt">
-                  <VisualBasicValue x:TypeArguments="sd3:DataTable" ExpressionText="dtPatientSoapNotes" />
-                </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="dc">
-                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="DiagCode" />
-                </OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="dos">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateofService" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="dateColumnName">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateColumnName" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="dcColumnName">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DiagColumnName" />
-                </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="cpt">
-                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="CPTCode" />
-                </OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="cptColumnName">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CPTColumnName" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="statusColumnName">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="StatusColumnName" />
-                </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="status">
-                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Status" />
-                </OutArgument>
+                <InArgument x:TypeArguments="sd3:DataTable" x:Key="dt">[dtPatientSoapNotes]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="dc">[DiagCode]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dos">[DateofService]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dateColumnName">[DateColumnName]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="dcColumnName">[DiagColumnName]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="cpt">[CPTCode]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="cptColumnName">[CPTColumnName]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="statusColumnName">[StatusColumnName]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="status">[Status]</OutArgument>
               </ui:InvokeCode.Arguments>
             </ui:InvokeCode>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Status: &quot; + Status + &quot; Diag Code : &quot; + DiagCode + &quot; CPT Code: &quot; + CPTCode]" />

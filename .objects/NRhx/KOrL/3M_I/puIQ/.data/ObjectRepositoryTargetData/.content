@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FX5BZY2p7UOTR5BB9Hlc5Q" Reference="d8rTQAsYNUaEY4BfHsZk6g/puIQAaMwqUuhZsC2SBEh7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view" CVScreenId="530ced6c-4c2a-401f-90b2-946c36e9d063" DesignTimeRectangle="569, 476, 105, 45" ElementType="Button" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl aria-role='tab' tag='BUTTON' visibleinnertext='Medical' /&gt;" Guid="6b57d8ea-db4d-472d-913c-bf37671d4f70" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="1d6fb0be05136de10bc5711f7e40650b.jpg" xmlns="">0ef0SOzrMCkCL45NuLBYp_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
