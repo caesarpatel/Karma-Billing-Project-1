@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OQcP1_ooe0i2PopGqE7yug" Reference="d8rTQAsYNUaEY4BfHsZk6g/lP-x3MkoWkuCyxbz7TzTXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/soap-note" CVScreenId="ac775fa3-47d0-43f8-a1d1-43098906e95b" DesignTimeRectangle="317, 668, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' placeholder='Search(Date, Provider, Status, Diagnosis Code, CPT Code)' /&gt;" Guid="2128e8b4-8be0-460d-aa6e-b773c244e93a" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4b59f887-27aa-4dd4-b0aa-ff2e80f68321" DesignTimeRectangle="314, 616, 108, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='page-title' tag='DIV' aaname='Soap Note' check:innerText='Soap Note' /&gt;" Guid="9f084519-ec72-472f-a81c-0ccbf59cba72" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="11d1c1afafe7ccfac52056bdc0a80ed1.jpg" xmlns="">0JHycn-SW40CQlL8xcHbJAA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

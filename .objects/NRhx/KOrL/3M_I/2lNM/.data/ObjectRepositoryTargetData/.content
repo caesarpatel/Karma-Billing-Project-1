@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="J2yw6Xc4kk-jiB4pePYLpA" Reference="d8rTQAsYNUaEY4BfHsZk6g/2lNMRe6g2Ui2T0StZ4y-yA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="kjBR9r3SpUacRFlWmakKlg" Reference="d8rTQAsYNUaEY4BfHsZk6g/2lNMRe6g2Ui2T0StZ4y-yA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/soap-note" CVScreenId="3e03732e-7676-4fac-b4ea-786d9dd5288b" DesignTimeRectangle="317, 661, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' placeholder='Search(Date, Provider, Status, Diagnosis Code, CPT Code)' /&gt;" Guid="d740bad0-31da-4528-a604-d390aa50e16f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients/view/soap-note" CVScreenId="3e03732e-7676-4fac-b4ea-786d9dd5288b" DesignTimeRectangle="317, 661, 460, 39" ElementType="InputBox" ElementVisibilityArgument="Visible" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' placeholder='Search(Date, Provider, Status, Diagnosis Code, CPT Code)' /&gt;" Guid="d740bad0-31da-4528-a604-d390aa50e16f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | View Patient' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
       <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
           <Target CVScreenId="3e03732e-7676-4fac-b4ea-786d9dd5288b" CvTextArea="312, 615, 112, 26" CvTextArgument="Soap Note" CvType="Text" DesignTimeRectangle="314, 609, 108, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='page-title' tag='DIV' aaname='Soap Note' check:innerText='Soap Note' /&gt;" Guid="0465f99d-2a61-450c-9c98-a3e865bc6818" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="a2b81aa62f2f77cebb68aa25d3b988f9.jpg" xmlns="">09tUFwfamfkOUU4EvkR-kFA</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="a2b81aa62f2f77cebb68aa25d3b988f9.jpg" xmlns="">0Bc_QiILucEClQkasUg3Sjw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>

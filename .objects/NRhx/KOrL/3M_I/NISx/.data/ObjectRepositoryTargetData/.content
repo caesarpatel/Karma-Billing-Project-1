@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="AckDlSINSkyfXwaTwEpk4A" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="cJX3eGDRDUqacLC90io1yw" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="55ad661c-ad66-4ae1-88d6-b0a0ed0c1c0f" DesignTimeRectangle="348, 449, 130, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='Patient Name' tableCol='1' parentid='patientsList' /&gt;" Guid="dc43391e-40c6-45f1-b8bf-b4e6eff9d245" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="f60710e7c29b280a23f8d992470b5b86.jpg" xmlns="">0fIUo_YfDxUmFg7xk7i-U3Q</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="karmaehr.com/manage-patients" CVScreenId="55ad661c-ad66-4ae1-88d6-b0a0ed0c1c0f" DesignTimeRectangle="348, 449, 130, 19" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='Patient Name' tableCol='1' parentid='patientsList' /&gt;" Guid="dc43391e-40c6-45f1-b8bf-b4e6eff9d245" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="f60710e7c29b280a23f8d992470b5b86.jpg" xmlns="">0TT17DRkh1Eu50Y-B77i2SA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
