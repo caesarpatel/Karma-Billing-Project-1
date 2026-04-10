@@ -148,7 +148,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1215,1355" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="907,10622" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Output" Name="strProjectOutputFolder" />
       <Variable x:TypeArguments="x:String" Default="Processed" Name="strProjectProcessedFolder" />
@@ -166,7 +166,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,487" sap2010:WorkflowViewState.IdRef="CommentOut_36">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="664,487" sap2010:WorkflowViewState.IdRef="CommentOut_36">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,376" sap2010:WorkflowViewState.IdRef="Sequence_108">
           <sap:WorkflowViewStateService.ViewState>
@@ -200,7 +200,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <Sequence DisplayName="Sequence - Establish connection with Google Drive" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="Sequence_92">
+    <Sequence DisplayName="Sequence - Establish connection with Google Drive" sap:VirtualizedContainerService.HintSize="664,3564" sap2010:WorkflowViewState.IdRef="Sequence_92">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strDateGoogleDocs" />
         <Variable x:TypeArguments="x:String" Name="strCodeGoogleDocs" />
@@ -209,7 +209,7 @@
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -221,9 +221,9 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
-      <uga:ReadTextConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileIdBackup="{x:Reference __ReferenceID0}" ManualFileId="{x:Null}" Section="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/document/d/1VnHhh7T8eUssbfZdWqCKp5Kzj1rnuVp2BrCnroI0wPs/edit?usp=drivesdk" ConnectionId="c7185d3e-6053-45ce-9d50-8febd2c29a0c" DisplayName="Read Text" FileFriendlyName="2.16-2.28 Schedule" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="560,236" sap2010:WorkflowViewState.IdRef="ReadTextConnections_3" MatchCase="False" MatchMode="Contains" ReadTextMode="AllText" Text="[strDocumentContent]" UseConnectionService="True">
+      <uga:ReadTextConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileIdBackup="{x:Reference __ReferenceID0}" ManualFileId="{x:Null}" Section="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/document/d/1b27HtnvHIIDQZiG2sgXZnrc2E7jTiaO0LbbWjJQjzIw/edit?usp=drivesdk" ConnectionId="c7185d3e-6053-45ce-9d50-8febd2c29a0c" DisplayName="Read Text" FileFriendlyName="2.16-2.28 Schedule" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="560,236" sap2010:WorkflowViewState.IdRef="ReadTextConnections_3" MatchCase="False" MatchMode="Contains" ReadTextMode="AllText" Text="[strDocumentContent]" UseConnectionService="True">
         <uga:ReadTextConnections.Item>
-          <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/document/d/1VnHhh7T8eUssbfZdWqCKp5Kzj1rnuVp2BrCnroI0wPs/edit?usp=drivesdk" ConnectionKey="c7185d3e-6053-45ce-9d50-8febd2c29a0c" FriendlyName="2.16-2.28 Schedule" FullPathHint="My Drive/Shared External/GCRPA/Karma/Karma Billing Project 1/Input/2.16-2.28 Schedule" InputMode="Browse">
+          <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/document/d/1b27HtnvHIIDQZiG2sgXZnrc2E7jTiaO0LbbWjJQjzIw/edit?usp=drivesdk" ConnectionKey="c7185d3e-6053-45ce-9d50-8febd2c29a0c" FriendlyName="2.16-2.28 Schedule" FullPathHint="My Drive/Shared External/GCRPA/Karma/Karma Billing Project 1/Input/2.16-2.28 Schedule" InputMode="Browse">
             <ugam:DriveItemArgument.Backup>
               <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                 <usau:BackupSlot.BackupValues>
@@ -446,7 +446,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="CommentOut_32">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="664,57" sap2010:WorkflowViewState.IdRef="CommentOut_32">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="520,544" sap2010:WorkflowViewState.IdRef="Sequence_104">
           <sap:WorkflowViewStateService.ViewState>
@@ -531,7 +531,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="CommentOut_31">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="664,57" sap2010:WorkflowViewState.IdRef="CommentOut_31">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="732,4020" sap2010:WorkflowViewState.IdRef="Sequence_94">
           <sap:WorkflowViewStateService.ViewState>
@@ -793,20 +793,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="Sequence - Scrape data from EHR for each patient" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="Sequence_45">
+    <Sequence DisplayName="Sequence - Scrape data from EHR for each patient" sap:VirtualizedContainerService.HintSize="664,5817" sap2010:WorkflowViewState.IdRef="Sequence_45">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="630,5441" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome EMR  Login page in Incognito Window" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="630,5725" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,5247" sap2010:WorkflowViewState.IdRef="Sequence_57">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,5531" sap2010:WorkflowViewState.IdRef="Sequence_57">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strPagingStatus" />
                 <Variable x:TypeArguments="x:Int32" Default="0" Name="intRowIndex" />
@@ -971,21 +971,32 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <Assign DisplayName="Assign - Test Only" sap:VirtualizedContainerService.HintSize="594,175" sap2010:WorkflowViewState.IdRef="Assign_19">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:Int32">[tempIndex]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
-                </Assign.Value>
-              </Assign>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInputData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="594,4509" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="594,337" sap2010:WorkflowViewState.IdRef="CommentOut_37">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Assign - Test Only" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_19">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[tempIndex]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInputData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="594,4631" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd2:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,4336" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,4458" sap2010:WorkflowViewState.IdRef="Sequence_58">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="ui:UiElement" Name="tempPatientName" />
                       </Sequence.Variables>
@@ -1085,9 +1096,9 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <uix:NCheckState sap2010:Annotation.AnnotationText="When we type in the Search Bar of the Manage Patients page, it takes finite amount of time to reload the patient list. Let's wait until the filtered patient list with search terms appears on the webpage." DisplayName="Check App State - Wait for new patient table to load" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558,3533" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
+                      <uix:NCheckState sap2010:Annotation.AnnotationText="When we type in the Search Bar of the Manage Patients page, it takes finite amount of time to reload the patient list. Let's wait until the filtered patient list with search terms appears on the webpage." DisplayName="Check App State - Wait for new patient table to load" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558,3655" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="556,3111" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="556,3233" sap2010:WorkflowViewState.IdRef="Sequence_60">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="strSoapNoteStatus" />
                               <Variable x:TypeArguments="x:String" Name="strCPTCode" />
@@ -1101,6 +1112,13 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="Sequence - Check if this is correct patient" sap:VirtualizedContainerService.HintSize="522,122" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
                             <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click Patient link to open patient details." ClickType="Single" ContinueOnError="True" DisplayName="Click Patients" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,297" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5065c98c-2dd6-4766-a4fc-236000ad558d" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="karmaehr.com/manage-patients" CVScreenId="55ad661c-ad66-4ae1-88d6-b0a0ed0c1c0f" ContentHash="cJX3eGDRDUqacLC90io1yw" DesignTimeRectangle="348, 449, 130, 19" ElementType="Text" ElementVisibilityArgument="Visible" FullSelectorArgument="&lt;webctrl id='patientsList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='Patient Name' tableCol='1' parentid='patientsList' /&gt;" Guid="dc43391e-40c6-45f1-b8bf-b4e6eff9d245" InformativeScreenshot="f60710e7c29b280a23f8d992470b5b86.jpg" Reference="d8rTQAsYNUaEY4BfHsZk6g/NISxMSqFbESpF00qnJ8QFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMR | Manage Patients' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
@@ -1368,7 +1386,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="CommentOut_35">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="664,57" sap2010:WorkflowViewState.IdRef="CommentOut_35">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="522,858" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
@@ -1422,7 +1440,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Output" BrowserItemId="https://docs.google.com/spreadsheets/d/17kZvQCPfs13X4hWNaHjil1T9zeeMLUnlK_ObIpPfyoc/edit?usp=drivesdk" ConnectionId="ee273ea5-76bb-458a-af72-3083fe7bce4e" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="520,394" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="Browse" Range="Sheet1" RowPosition="0" Source="[dtInputData]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+    <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Output" BrowserItemId="https://docs.google.com/spreadsheets/d/1YOAMb3Bs_nL0N-ap_umjAefFoxvhrYro0MStGPRF6oE/edit?usp=drivesdk" ConnectionId="ee273ea5-76bb-458a-af72-3083fe7bce4e" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="664,394" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="Browse" Range="Sheet1" RowPosition="0" Source="[dtInputData]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
       <uga:WriteRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
           <usau:BackupSlot.BackupValues>
@@ -1431,7 +1449,7 @@
         </usau:BackupSlot>
       </uga:WriteRangeConnections.FileIdBackup>
       <uga:WriteRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/17kZvQCPfs13X4hWNaHjil1T9zeeMLUnlK_ObIpPfyoc/edit?usp=drivesdk" ConnectionKey="ee273ea5-76bb-458a-af72-3083fe7bce4e" FriendlyName="Output" FullPathHint="My Drive/Shared External/GCRPA/Karma/Karma Billing Project 1/Output/Output" InputMode="Browse">
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1YOAMb3Bs_nL0N-ap_umjAefFoxvhrYro0MStGPRF6oE/edit?usp=drivesdk" ConnectionKey="ee273ea5-76bb-458a-af72-3083fe7bce4e" FriendlyName="Output" FullPathHint="My Drive/Shared External/GCRPA/Karma/Karma Billing Project 1/Output/Output" InputMode="Browse">
           <ugam:DriveItemArgument.DriveId>
             <InArgument x:TypeArguments="x:String" />
           </ugam:DriveItemArgument.DriveId>
@@ -1450,6 +1468,6 @@
         </usau:BackupSlot>
       </uga:WriteRangeConnections.RangeWriteModeBackup>
     </uga:WriteRangeConnections>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,166" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Warn" Message="[&quot;That's a wrap.&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="664,166" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Warn" Message="[&quot;That's a wrap.&quot;]" />
   </Sequence>
 </Activity>
